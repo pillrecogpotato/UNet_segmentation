@@ -1,0 +1,79 @@
+{
+    "os": "Linux-6.1.0-21-amd64-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2024-05-27T10:42:35.075405",
+    "startedAt": "2024-05-27T10:42:34.129241",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--scale",
+        "1",
+        "--amp"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/milesial/Pytorch-UNet",
+        "commit": "2f62e6b1c8e98022a6418d31a76f6abd800e5ae7"
+    },
+    "email": null,
+    "root": "/workspace/unet",
+    "host": "16dd88218f83",
+    "username": "root",
+    "executable": "/usr/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 6,
+    "cpu_freq": {
+        "current": 3193.9429999999998,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3193.943,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3193.943,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3193.943,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3193.943,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3193.943,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3193.943,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 503.7978935241699,
+        "used": 32.30472183227539
+    },
+    "gpu": "NVIDIA GeForce GTX 1080 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1080 Ti",
+            "memory_total": 11811160064
+        }
+    ],
+    "memory": {
+        "total": 3.822521209716797
+    }
+}
