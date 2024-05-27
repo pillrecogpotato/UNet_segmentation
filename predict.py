@@ -37,7 +37,7 @@ def get_args():
     parser = argparse.ArgumentParser(description='Predict masks from input images')
     # parser.add_argument('--model', '-m', default='MODEL.pth', metavar='FILE',
     #                    help='Specify the file in which the model is stored')
-    parser.add_argument('--model', '-m', default='/root/.cache/torch/hub/checkpoints/unet_carvana_scale0.5_epoch2.pth', metavar='FILE',
+    parser.add_argument('--model', '-m', default='/root/.cache/torch/hub/checkpoints/unet_carvana_scale1.0_epoch2.pth', metavar='FILE',
                         help='Specify the file in which the model is stored')
     parser.add_argument('--input', '-i', metavar='INPUT', nargs='+', help='Filenames of input images', required=True)
     parser.add_argument('--output', '-o', metavar='OUTPUT', nargs='+', help='Filenames of output images')
@@ -86,7 +86,7 @@ if __name__ == '__main__':
     out_files = get_output_filenames(args)
 
     # net = UNet(n_channels=3, n_classes=args.classes, bilinear=args.bilinear)
-    net = torch.hub.load('milesial/Pytorch-UNet', 'unet_carvana', pretrained=True, scale=0.5)
+    net = torch.hub.load('milesial/Pytorch-UNet', 'unet_carvana', pretrained=True, scale=1.0)
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     logging.info(f'Loading model {args.model}')
